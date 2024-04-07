@@ -1,12 +1,12 @@
 #!/bin/bash
 
-while getopts 'h:' OPTION; do
+while getopts 'h' OPTION; do
   case "$OPTION" in
     h)
       echo "Это программа считает дискриминант из переменных A, B, C и по нему говорит, сколько корней в уравнении"
       ;;
     ?)
-      echo "Использование скрипта: $(basename \$0) [-h]" >&2
+      echo "Использование скрипта: $(basename "$0") [-h]" >&2
       exit 1
       ;;
   esac
